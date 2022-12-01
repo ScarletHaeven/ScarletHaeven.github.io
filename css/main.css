@@ -101,7 +101,7 @@ h2 {
 }
 
 .grid-child {
-  width: 30ch;
+  width: 40ch;
   min-height: 20ch;
   padding: 10px;
   background: white;
@@ -112,7 +112,7 @@ h2 {
 }
 
 .grid-container-text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   justify-content: center;
   align-items: center;
 }
