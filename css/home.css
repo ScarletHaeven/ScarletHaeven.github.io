@@ -1,0 +1,15 @@
+/* Blocks */
+
+.home-image {
+  width: 250px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 770px) {
+  .header-text {
+    font-size: 3rem;
+  }
+}
