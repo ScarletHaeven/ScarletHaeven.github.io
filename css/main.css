@@ -107,6 +107,10 @@ body {
   align-items: center;
 }
 
+.content-box-grid {
+  display: grid;
+}
+
 .content-splitter {
   width: 100%;
   margin-top: 25px;
@@ -125,6 +129,10 @@ body {
 }
 
 /* Modifiers */
+
+.text--italicized {
+  font-style: italic;
+}
 
 .text--centered {
   text-align: center;
@@ -179,7 +187,7 @@ body {
   .header-text {
     font-size: 3rem;
   }
-  
+
   .main-content-text {
     width: 90%;
     font-size: 1.25rem;
