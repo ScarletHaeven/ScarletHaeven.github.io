@@ -24,7 +24,7 @@
 
 .header-text {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 4rem;
 }
 
@@ -52,7 +52,6 @@ body {
   background: hsl(240, 100%, 50%);
   background-image: var(--gradient);
   background-size: 400%;
-
   animation: bg-animation 5s infinite alternate;
 }
 
@@ -71,12 +70,10 @@ body {
 .navbar {
   width: 100%;
   background-color: white;
-  z-index: 1
 }
 
 .nav-list {
   list-style-type: none;
-
   display: flex;
 }
 
@@ -104,7 +101,7 @@ body {
   border-radius: 10px;
 }
 
-#content-box-welcome {
+.content-box-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +116,6 @@ body {
 .main-content-text {
   max-width: 750px;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 /* Font-Awesome */
@@ -168,17 +164,22 @@ body {
     flex-grow: 1;
     flex-basis: 0;
   }
+
   .nav-link {
     width: auto;
   }
+
   .main-content {
     margin-left: 25px;
     margin-right: 25px;
   }
-
 }
 
 @media screen and (max-width: 770px) {
+  .header-text {
+    font-size: 3rem;
+  }
+  
   .main-content-text {
     width: 90%;
     font-size: 1.25rem;
