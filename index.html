@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/google-fonts.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <script src="https://kit.fontawesome.com/d5ab0b7c79.js" crossorigin="anonymous"></script>
     <title>Scarlet's "Haeven"</title>
 </head>
 
@@ -20,27 +20,32 @@
     <!-- Navigation -->
     <nav class="navbar lower-opacity">
         <ul class="nav-list">
-            <li id="home" class="nav-list-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li id="about-me" class="nav-list-item"><a class="nav-link" href="">About Me</a></li>
-            <li id="album-grid" class="nav-list-item"><a class="nav-link" href="">Album Grid</a></li>
-            <li id="faq" class="nav-list-item nav-list-item--right"><a class="nav-link" href="">FAQ</a></li>
-            <li id="menu" class="nav-list-item nav-list-item--right nav-list-item--hidden"><a class="nav-link" href="">Menu</a></li>
+            <li id="menu" class="nav-list-item nav-list-item--hidden"><a class="nav-link" href="javascript:void(0);" onclick="navbarMenuToggle()"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            <li id="home" class="nav-list-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house fa-2x"></i><p id="home-text">Home</p></a></li>
+            <li id="about-me" class="nav-list-item nav-list-menu-link"><a class="nav-link" href="">About Me</a></li>
+            <li id="album-grid" class="nav-list-item nav-list-menu-link"><a class="nav-link" href="">Album Grid</a></li>
+            <li id="faq" class="nav-list-item nav-list-menu-link"><a class="nav-link" href="">FAQ</a></li>
         </ul>
     </nav>
 
     <!-- Main Content-->
     <main class="wrapper main-content lower-opacity">
-        <h1 class="header-text">Welcome!</h1>
-        <img class="home-image" src="media/SCP5500_Square.png" alt="An image of SCP-5500.">
-        <p class="main-content-text">
-            My name is Laevateinn, and welcome to my personal website! There isn't much content here yet, but I'll be sure to add a lot more in the future.<br><br>
-            This website is a way for me to share my other projects, as well as giving you info about myself. Enjoy your stay!
-        </p>
+
+        <div id="content-box-welcome">
+            <h1 class="header-text">Welcome!</h1>
+            <img class="home-image" src="media/SCP5500_Square.png" alt="An image of SCP-5500.">
+            <p class="main-content-text">
+                My name is Laevateinn, and welcome to my personal website! There isn't much content here yet, but I'll be sure to add a lot more in the future.<br><br>
+                This website is a way for me to share my other projects, as well as giving you info about myself. Enjoy your stay!
+            </p>
+        </div>
+
         <hr class="content-splitter">
+
     </main>
 
     <!-- Script Tags -->
-    <script src=""></script>
+    <script src="js/navbarMenuToggle.js"></script>
 </body>
 
 </html>

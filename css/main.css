@@ -37,6 +37,10 @@
   opacity: 0.8;
 }
 
+.block {
+  display: block !important;
+}
+
 /* General Styling */
 
 * {
@@ -67,10 +71,6 @@ body {
 .navbar {
   width: 100%;
   background-color: white;
-  margin-bottom: 10px;
-  
-  position: sticky;
-  top: 0;
   z-index: 1
 }
 
@@ -79,8 +79,6 @@ body {
 
   display: flex;
 }
-
-
 
 .nav-link {
   display: block;
@@ -91,11 +89,22 @@ body {
   text-align: center;
 }
 
+#home-text {
+  display: block;
+}
+
+#faq {
+  margin-left: auto;
+}
+
 .main-content {
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding-bottom: 10px;
   border-radius: 10px;
+}
 
+#content-box-welcome {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,6 +122,12 @@ body {
   text-align: center;
 }
 
+/* Font-Awesome */
+
+.fa-house {
+  display: none !important;
+}
+
 /* Modifiers */
 
 .text--centered {
@@ -121,10 +136,6 @@ body {
 
 .text--justified {
   text-align: justify;
-}
-
-.nav-list-item--right {
-  margin-left: auto;
 }
 
 .nav-list-item--hidden {
@@ -160,6 +171,11 @@ body {
   .nav-link {
     width: auto;
   }
+  .main-content {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
 }
 
 @media screen and (max-width: 770px) {
@@ -171,12 +187,38 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-  #about-me,
-  #album-grid,
-  #faq {
+  .nav-list-menu-link {
     display: none;
+    flex-grow: initial;
+    flex-basis: initial;
   }
+
+  .fa-house {
+    display: block !important;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+  }
+
   .nav-list-item--hidden {
     display: block;
+  }
+
+  #home {
+    position: absolute;
+    margin-right: auto;
+  }
+
+  #home-text {
+    display: none;
+  }
+
+  #menu {
+    margin-left: auto;
+  }
+
+  #faq {
+    margin-left: initial;
   }
 }
