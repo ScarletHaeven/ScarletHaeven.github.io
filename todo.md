@@ -1,6 +1,6 @@
 # Primary TODOs
+TODO Add Projects Page
 TODO Add About Me Page
-TODO Add FAQ Page
-TODO Add Album Grid
+
 
 # Secondary TODOs
