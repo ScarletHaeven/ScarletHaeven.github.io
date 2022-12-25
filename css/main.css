@@ -10,14 +10,16 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Variables */
 
 :root {
-  --gradient: linear-gradient(
-    130deg,
-    hsl(240, 100%, 75%) 0%,
-    hsl(20, 100%, 50%) 100%
-  );
+  --gradient: linear-gradient(130deg,
+      hsl(240, 100%, 75%) 0%,
+      hsl(20, 100%, 50%) 100%);
 }
 
 /* Utility Classes */
@@ -90,7 +92,7 @@ body {
   display: block;
 }
 
-#faq {
+#projects {
   margin-left: auto;
 }
 
@@ -160,6 +162,7 @@ body {
   0% {
     background-position: left;
   }
+
   100% {
     background-position: right;
   }
@@ -205,7 +208,7 @@ body {
   .fa-house {
     display: block !important;
   }
-  
+
   .nav-list {
     flex-direction: column;
   }
@@ -227,7 +230,7 @@ body {
     margin-left: auto;
   }
 
-  #faq {
+  #projects {
     margin-left: initial;
   }
 }
