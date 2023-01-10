@@ -17,6 +17,7 @@ a {
 /* Variables */
 
 :root {
+  --wrapper-max-width: 800px;
   --gradient: linear-gradient(130deg,
       hsl(240, 100%, 75%) 0%,
       hsl(20, 100%, 50%) 100%);
@@ -26,13 +27,7 @@ a {
 
 .header-text {
   margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 4rem;
-}
-
-.margin-top-bottom {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .lower-opacity {
@@ -46,7 +41,7 @@ a {
 /* General Styling */
 
 * {
-  font-family: "Alexandria", sans-serif;
+  font-family: verdana, sans-serif;
 }
 
 body {
@@ -57,14 +52,18 @@ body {
   animation: bg-animation 5s infinite alternate;
 }
 
+h1 {
+  font-family: "Alexandria", sans-serif;
+}
+
 /* Blocks */
 
 .wrapper {
-  max-width: 960px;
+  max-width: var(--wrapper-max-width) ;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   text-align: center;
   background-color: white;
 }
@@ -88,19 +87,20 @@ body {
   text-align: center;
 }
 
-#home-text {
-  display: block;
-}
-
-#projects {
+#about-me {
   margin-left: auto;
 }
 
 .main-content {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   border-radius: 10px;
+}
+
+.main-content-text {
+  max-width: 700px;
+  margin-top: 10px;
 }
 
 .content-box-flex {
@@ -109,25 +109,10 @@ body {
   align-items: center;
 }
 
-.content-box-grid {
-  display: grid;
-}
-
 .content-splitter {
   width: 100%;
   margin-top: 25px;
   margin-bottom: 25px;
-}
-
-.main-content-text {
-  max-width: 750px;
-  font-size: 1.5rem;
-}
-
-/* Font-Awesome */
-
-.fa-house {
-  display: none !important;
 }
 
 /* Modifiers */
@@ -170,7 +155,7 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .nav-list-item {
     flex-grow: 1;
     flex-basis: 0;
@@ -184,53 +169,14 @@ body {
     margin-left: 25px;
     margin-right: 25px;
   }
-}
 
-@media screen and (max-width: 770px) {
   .header-text {
-    font-size: 3rem;
-  }
-
-  .main-content-text {
-    width: 90%;
-    font-size: 1.25rem;
-    text-align: justify;
+    font-size: 3.5rem;
   }
 }
 
-@media screen and (max-width: 650px) {
-  .nav-list-menu-link {
-    display: none;
-    flex-grow: initial;
-    flex-basis: initial;
-  }
-
-  .fa-house {
-    display: block !important;
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
-
-  .nav-list-item--hidden {
-    display: block;
-  }
-
-  #home {
-    position: absolute;
-    margin-right: auto;
-  }
-
-  #home-text {
-    display: none;
-  }
-
-  #menu {
-    margin-left: auto;
-  }
-
-  #projects {
-    margin-left: initial;
+@media screen and (max-width: 560px) {
+  .header-text {
+    font-size: 2.5rem;
   }
 }
